@@ -1,0 +1,73 @@
+import type { Metadata } from 'next'
+import { Inter, Playfair_Display } from 'next/font/google'
+import './globals.css'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import Script from 'next/script'
+import StructuredData from './structured-data'
+
+const inter = Inter({ 
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap',
+})
+
+export const metadata: Metadata = {
+  title: {
+    default: 'EuroBac Tutors | European Baccalaureate • Admissions Tests • University Applications',
+    template: '%s | EuroBac Tutors',
+  },
+  description: 'Expert tutoring for European Baccalaureate, admissions tests (SAT, ACT, TOEFL, IELTS), and university applications. Experienced tutors across Europe.',
+  keywords: ['European Baccalaureate', 'EB tutoring', 'SAT prep', 'university applications', 'admissions tests', 'tutoring Luxembourg', 'tutoring Brussels'],
+  authors: [{ name: 'EuroBac Tutors' }],
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://eurobactutors.com',
+    siteName: 'EuroBac Tutors',
+    title: 'EuroBac Tutors | European Baccalaureate • Admissions Tests • University Applications',
+    description: 'Expert tutoring for European Baccalaureate, admissions tests, and university applications.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'EuroBac Tutors',
+    description: 'Expert tutoring for European Baccalaureate, admissions tests, and university applications.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <head>
+        {process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN && (
+          <Script
+            defer
+            data-domain={process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN}
+            src="https://plausible.io/js/script.js"
+          />
+        )}
+      </head>
+      <body className={`${inter.variable} ${playfair.variable} font-sans`}>
+        <StructuredData />
+        <Navbar />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  )
+}
+
