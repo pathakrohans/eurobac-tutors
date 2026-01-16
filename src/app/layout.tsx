@@ -61,7 +61,7 @@ export default function RootLayout({
           />
         )}
       </head>
-      <body className={`${inter.variable} ${playfair.variable} font-sans`}>
+      <body className={`${inter.variable} ${playfair.variable} font-display`}>
         <StructuredData />
         <Navbar />
         <main className="min-h-screen">{children}</main>
@@ -70,4 +70,3 @@ export default function RootLayout({
     </html>
   )
 }
-
