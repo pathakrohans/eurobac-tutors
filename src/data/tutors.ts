@@ -23,11 +23,11 @@ export const tutors: Tutor[] = [
     specialties: ['EB Math', 'EB Physics', 'SAT Math'],
     linkedin: 'https://linkedin.com/in/profile-rohanpathak',
     availability: 'Limited slots',
-  }
+  },
   {
     id: 'sarah-chen',
     name: 'Sarah Chen',
-    headshot: '/team/sarah-chen.jpg',
+    headshot: '/team/rohan-pathak.jpg',
     degree: 'BSc Electrical & Computer Engineering, Cornell University',
     bio: 'Sarah specializes in mathematics and physics for the European Baccalaureate, with particular expertise in exam preparation and oral exam techniques. She has helped over 50 students achieve their target scores.',
     subjects: ['Mathematics', 'Physics', 'Computer Science'],
@@ -39,7 +39,7 @@ export const tutors: Tutor[] = [
   {
     id: 'marco-rossi',
     name: 'Marco Rossi',
-    headshot: '/team/marco-rossi.jpg',
+    headshot: '/team/rohan-pathak.jpg',
     degree: 'MA History, Oxford University',
     bio: 'Marco focuses on humanities subjects and university applications, especially for UK universities. He has extensive experience with UCAS personal statements and interview preparation.',
     subjects: ['History', 'English Literature', 'Philosophy'],
@@ -50,7 +50,7 @@ export const tutors: Tutor[] = [
   {
     id: 'emma-larsen',
     name: 'Emma Larsen',
-    headshot: '/team/emma-larsen.jpg',
+    headshot: '/team/rohan-pathak.jpg',
     degree: 'BSc Biology, ETH Zurich',
     bio: 'Emma teaches biology and chemistry for the EB, and helps students prepare for medical school admissions tests including BMAT and UCAT. She also coaches students on study methods and exam strategies.',
     subjects: ['Biology', 'Chemistry', 'Mathematics'],
@@ -61,7 +61,7 @@ export const tutors: Tutor[] = [
   {
     id: 'james-wilson',
     name: 'James Wilson',
-    headshot: '/team/james-wilson.jpg',
+    headshot: '/team/rohan-pathak.jpg',
     degree: 'BA Economics, London School of Economics',
     bio: 'James specializes in economics, business studies, and US university applications. He has a strong track record helping students with the Common App and SAT/ACT preparation.',
     subjects: ['Economics', 'Business Studies', 'Mathematics'],
@@ -72,7 +72,7 @@ export const tutors: Tutor[] = [
   {
     id: 'sophie-martin',
     name: 'Sophie Martin',
-    headshot: '/team/sophie-martin.jpg',
+    headshot: '/team/rohan-pathak.jpg',
     degree: 'MA French Literature, Sorbonne University',
     bio: 'Sophie teaches French, Spanish, and English language and literature. She helps students with language exams including TOEFL and IELTS, and supports multilingual students in their applications.',
     subjects: ['French', 'Spanish', 'English Language', 'English Literature'],
