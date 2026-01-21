@@ -59,36 +59,6 @@ export const services: Service[] = [
         description: 'Comprehensive SAT preparation covering Math, Evidence-Based Reading and Writing, and test-taking strategies.',
         for: 'Students applying to US universities',
       },
-      {
-        name: 'ACT',
-        description: 'Full ACT preparation including all four sections: English, Math, Reading, and Science.',
-        for: 'Students applying to US universities',
-      },
-      {
-        name: 'TOEFL / IELTS',
-        description: 'Language proficiency test preparation with practice tests and speaking/writing feedback.',
-        for: 'Non-native English speakers applying to English-speaking universities',
-      },
-      {
-        name: 'AP Exams',
-        description: 'Advanced Placement exam preparation across multiple subjects.',
-        for: 'Students taking AP courses or seeking college credit',
-      },
-      {
-        name: 'LNAT (UK Law)',
-        description: 'Law National Aptitude Test preparation for UK law school applications.',
-        for: 'Students applying to UK law programs',
-      },
-      {
-        name: 'UCAT / BMAT (UK Medicine)',
-        description: 'Medical school admissions test preparation with practice questions and strategy sessions.',
-        for: 'Students applying to UK medical schools',
-      },
-      {
-        name: 'General Admissions Tests',
-        description: 'Support for other standardized tests required by specific universities or programs.',
-        for: 'Students with specific test requirements',
-      },
     ],
   },
   {

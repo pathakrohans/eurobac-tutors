@@ -1,7 +1,7 @@
 # Project Structure
 
 ```
-EuroBac Tutors/
+EB Tutors/
 ├── public/
 │   ├── team/                    # Tutor headshots (add images here)
 │   └── favicon.ico              # Site favicon

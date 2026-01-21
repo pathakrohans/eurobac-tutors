@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4 tracking-tight">EuroBac Tutors</h3>
+            <h3 className="text-white font-semibold text-lg mb-4 tracking-tight">EB Tutors</h3>
             <p className="text-sm">
               Expert tutoring for European Baccalaureate, admissions tests, and university applications.
             </p>
@@ -79,7 +79,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-sm">
-          <p>© {currentYear} EuroBac Tutors. All rights reserved.</p>
+          <p>© {currentYear} EB Tutors. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="/privacy" className="hover:text-white transition-colors">
               Privacy Policy

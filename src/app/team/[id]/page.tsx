@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
   }
 
   return {
-    title: `${tutor.name} | EuroBac Tutors`,
+    title: `${tutor.name} | EB Tutors`,
     description: tutor.bio,
   }
 }
@@ -89,12 +89,6 @@ export default function TutorProfilePage({ params }: { params: { id: string } })
               <h1 className="text-4xl font-semibold tracking-tight text-black mb-2">{tutor.name}</h1>
               <p className="text-lg text-gray-600 mb-6">{tutor.degree}</p>
 
-              {tutor.availability && (
-                <div className="mb-6 p-3 bg-gray-50 border border-gray-200">
-                  <p className="text-sm text-gray-700 font-medium">{tutor.availability}</p>
-                </div>
-              )}
-
               <div className="prose max-w-none mb-8">
                 <p className="text-gray-700 leading-relaxed">{tutor.bio}</p>
               </div>
@@ -132,6 +126,19 @@ export default function TutorProfilePage({ params }: { params: { id: string } })
                     ))}
                   </div>
                 </div>
+
+                {tutor.admissionsSystems.length > 0 && (
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Admissions Systems</h3>
+                    <div className="flex flex-wrap gap-2">
+                      {tutor.admissionsSystems.map((system) => (
+                        <Tag key={system} variant="primary" size="md">
+                          {system}
+                        </Tag>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -170,4 +177,3 @@ export default function TutorProfilePage({ params }: { params: { id: string } })
     </>
   )
 }
-

@@ -4,7 +4,7 @@ import Button from '@/components/Button'
 
 export const metadata = {
   title: 'About Us',
-  description: 'Learn about EuroBac Tutors, our mission, values, and how we select our tutor team.',
+  description: 'Learn about EB Tutors, our mission, values, and how we select our tutor team.',
 }
 
 export default function AboutPage() {
@@ -27,7 +27,7 @@ export default function AboutPage() {
     <>
       <Section className="pt-24 pb-16">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About EuroBac Tutors</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About EB Tutors</h1>
           <p className="text-lg text-gray-700">
             Expert tutoring for students navigating the European Baccalaureate, admissions tests, and university applications.
           </p>
@@ -45,7 +45,7 @@ export default function AboutPage() {
               of international university applications.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
-              EuroBac Tutors was founded to bridge this gap. We bring together experienced tutors who have been through 
+              EB Tutors was founded to bridge this gap. We bring together experienced tutors who have been through 
               the EB themselves, excelled in admissions tests, and successfully navigated university applications. 
               Our tutors understand the unique challenges EB students face and can provide targeted, effective support.
             </p>

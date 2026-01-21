@@ -2,7 +2,7 @@ export default function StructuredData() {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'EuroBac Tutors',
+    name: 'EB Tutors',
     description: 'Expert tutoring for European Baccalaureate, admissions tests, and university applications.',
     url: 'https://eurobactutors.com',
     logo: 'https://eurobactutors.com/logo.png',
@@ -17,7 +17,7 @@ export default function StructuredData() {
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    name: 'EuroBac Tutors',
+    name: 'EB Tutors',
     description: 'Expert tutoring for European Baccalaureate, admissions tests, and university applications.',
     url: 'https://eurobactutors.com',
     serviceArea: {
@@ -41,7 +41,7 @@ export default function StructuredData() {
     serviceType: 'Tutoring Service',
     provider: {
       '@type': 'Organization',
-      name: 'EuroBac Tutors',
+      name: 'EB Tutors',
     },
     areaServed: {
       '@type': 'Country',

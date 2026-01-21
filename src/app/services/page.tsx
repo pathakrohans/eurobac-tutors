@@ -18,6 +18,7 @@ export default function ServicesPage() {
     new Set(tutors.flatMap((t) => t.specialties.filter((s) => s.includes('SAT') || s.includes('ACT') || s.includes('TOEFL') || s.includes('IELTS') || s.includes('LNAT') || s.includes('UCAT') || s.includes('BMAT') || s.includes('AP'))))
   ).sort()
   const allLanguages = Array.from(new Set(tutors.flatMap((t) => t.languages))).sort()
+  const allAdmissionsSystems = Array.from(new Set(tutors.flatMap((t) => t.admissionsSystems))).sort()
 
   return (
     <>
@@ -109,6 +110,19 @@ export default function ServicesPage() {
                 ))}
               </div>
             </div>
+
+            {allAdmissionsSystems.length > 0 && (
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">University Admissions Systems</h3>
+                <div className="flex flex-wrap gap-2">
+                  {allAdmissionsSystems.map((system) => (
+                    <Tag key={system} variant="primary" size="md">
+                      {system}
+                    </Tag>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
           <div className="text-center">
@@ -139,4 +153,3 @@ export default function ServicesPage() {
     </>
   )
 }
-

@@ -257,7 +257,7 @@ export default function Home() {
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-normal text-black mb-6 tracking-tight">Frequently Asked Questions</h2>
           <p className="text-lg text-primary-600 max-w-2xl mx-auto font-light">
-            Everything you need to know about working with EuroBac Tutors
+            Everything you need to know about working with EB Tutors
           </p>
         </div>
         <div className="max-w-3xl mx-auto">

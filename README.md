@@ -1,6 +1,6 @@
-# EuroBac Tutors Website
+# EB Tutors Website
 
-A production-ready website for EuroBac Tutors, a tutoring service specializing in European Baccalaureate, admissions tests, and university applications.
+A production-ready website for EB Tutors, a tutoring service specializing in European Baccalaureate, admissions tests, and university applications.
 
 ## Tech Stack
 
@@ -241,6 +241,6 @@ For issues or questions, check:
 
 ## License
 
-Private - EuroBac Tutors
+Private - EB Tutors
 
 

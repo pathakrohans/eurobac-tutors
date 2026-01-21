@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center space-x-2 group">
-            <span className="text-lg font-medium tracking-tight text-black group-hover:text-primary-600 transition-colors duration-200">EuroBac Tutors</span>
+            <span className="text-lg font-medium tracking-tight text-black group-hover:text-primary-600 transition-colors duration-200">EB Tutors</span>
           </Link>
 
           {/* Desktop Navigation */}

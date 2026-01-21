@@ -12,6 +12,7 @@ export default function TeamPage() {
   const [selectedSubjects, setSelectedSubjects] = useState<string[]>([])
   const [selectedTests, setSelectedTests] = useState<string[]>([])
   const [selectedLanguages, setSelectedLanguages] = useState<string[]>([])
+  const [selectedAdmissionsSystems, setSelectedAdmissionsSystems] = useState<string[]>([])
 
   // Collect all unique options
   const allSubjects = Array.from(new Set(tutors.flatMap((t) => t.subjects))).sort()
@@ -33,6 +34,7 @@ export default function TeamPage() {
     )
   ).sort()
   const allLanguages = Array.from(new Set(tutors.flatMap((t) => t.languages))).sort()
+  const allAdmissionsSystems = Array.from(new Set(tutors.flatMap((t) => t.admissionsSystems))).sort()
 
   // Filter tutors based on selected criteria
   const filteredTutors = useMemo(() => {
@@ -46,13 +48,19 @@ export default function TeamPage() {
       const matchesLanguage =
         selectedLanguages.length === 0 ||
         selectedLanguages.some((lang) => tutor.languages.includes(lang))
+      const matchesAdmissionsSystem =
+        selectedAdmissionsSystems.length === 0 ||
+        selectedAdmissionsSystems.some((system) => tutor.admissionsSystems.includes(system))
 
-      return matchesSubject && matchesTest && matchesLanguage
+      return matchesSubject && matchesTest && matchesLanguage && matchesAdmissionsSystem
     })
-  }, [selectedSubjects, selectedTests, selectedLanguages])
+  }, [selectedSubjects, selectedTests, selectedLanguages, selectedAdmissionsSystems])
 
   const hasActiveFilters =
-    selectedSubjects.length > 0 || selectedTests.length > 0 || selectedLanguages.length > 0
+    selectedSubjects.length > 0 ||
+    selectedTests.length > 0 ||
+    selectedLanguages.length > 0 ||
+    selectedAdmissionsSystems.length > 0
 
   return (
     <>
@@ -74,22 +82,28 @@ export default function TeamPage() {
           {/* Filters */}
           <div className="bg-white rounded-lg border border-gray-200 p-6 mb-8 space-y-6">
             <FilterChips
-              label="Filter by Subject"
+              label="Filter by EB Subject"
               options={allSubjects}
               selected={selectedSubjects}
               onChange={setSelectedSubjects}
             />
             <FilterChips
-              label="Filter by Test Type"
+              label="Filter by Standardized Test Type"
               options={allTests}
               selected={selectedTests}
               onChange={setSelectedTests}
             />
             <FilterChips
-              label="Filter by Language"
+              label="Filter by Languages Spoken"
               options={allLanguages}
               selected={selectedLanguages}
               onChange={setSelectedLanguages}
+            />
+            <FilterChips
+              label="Filter by Admissions Systems"
+              options={allAdmissionsSystems}
+              selected={selectedAdmissionsSystems}
+              onChange={setSelectedAdmissionsSystems}
             />
           </div>
 
@@ -105,6 +119,7 @@ export default function TeamPage() {
                   setSelectedSubjects([])
                   setSelectedTests([])
                   setSelectedLanguages([])
+                  setSelectedAdmissionsSystems([])
                 }}
                 className="text-sm text-black hover:text-gray-600 font-medium border-b border-black hover:border-gray-600 transition-colors"
               >
@@ -127,6 +142,7 @@ export default function TeamPage() {
                   setSelectedSubjects([])
                   setSelectedTests([])
                   setSelectedLanguages([])
+                  setSelectedAdmissionsSystems([])
                 }}
                 className="text-black hover:text-gray-600 font-medium"
               >
@@ -157,4 +173,3 @@ export default function TeamPage() {
     </>
   )
 }
-

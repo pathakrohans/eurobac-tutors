@@ -20,23 +20,23 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: 'EuroBac Tutors | European Baccalaureate • Admissions Tests • University Applications',
-    template: '%s | EuroBac Tutors',
+    default: 'EB Tutors | European Baccalaureate • Admissions Tests • University Applications',
+    template: '%s | EB Tutors',
   },
   description: 'Expert tutoring for European Baccalaureate, admissions tests (SAT, ACT, TOEFL, IELTS), and university applications. Experienced tutors across Europe.',
   keywords: ['European Baccalaureate', 'EB tutoring', 'SAT prep', 'university applications', 'admissions tests', 'tutoring Luxembourg', 'tutoring Brussels'],
-  authors: [{ name: 'EuroBac Tutors' }],
+  authors: [{ name: 'EB Tutors' }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://eurobactutors.com',
-    siteName: 'EuroBac Tutors',
-    title: 'EuroBac Tutors | European Baccalaureate • Admissions Tests • University Applications',
+    siteName: 'EB Tutors',
+    title: 'EB Tutors | European Baccalaureate • Admissions Tests • University Applications',
     description: 'Expert tutoring for European Baccalaureate, admissions tests, and university applications.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'EuroBac Tutors',
+    title: 'EB Tutors',
     description: 'Expert tutoring for European Baccalaureate, admissions tests, and university applications.',
   },
   robots: {

@@ -11,6 +11,11 @@ interface TutorCardProps {
 export default function TutorCard({ tutor, showAllSubjects = false }: TutorCardProps) {
   const displayedSubjects = showAllSubjects ? tutor.subjects : tutor.subjects.slice(0, 3)
   const displayedLanguages = tutor.languages.slice(0, 3)
+  const testKeywords = ['SAT', 'ACT', 'TOEFL', 'IELTS', 'LNAT', 'UCAT', 'BMAT', 'AP']
+  const standardizedTests = tutor.specialties.filter((specialty) =>
+    testKeywords.some((keyword) => specialty.includes(keyword))
+  )
+  const displayedTests = standardizedTests.slice(0, 3)
 
   return (
     <div className="bg-white border border-primary-200 overflow-hidden hover:border-primary-400 transition-all duration-300 hover:shadow-[0_4px_24px_rgba(0,0,0,0.08)] group animate-fade-in-up">
@@ -29,7 +34,7 @@ export default function TutorCard({ tutor, showAllSubjects = false }: TutorCardP
         
         <div className="space-y-3 mb-4">
           <div>
-            <p className="text-xs font-medium text-gray-500 mb-2">Subjects</p>
+            <p className="text-xs font-medium text-gray-500 mb-2">EB Subjects</p>
             <div className="flex flex-wrap gap-2">
               {displayedSubjects.map((subject) => (
                 <Tag key={subject} variant="primary" size="sm">
@@ -43,7 +48,25 @@ export default function TutorCard({ tutor, showAllSubjects = false }: TutorCardP
               )}
             </div>
           </div>
-          
+
+          {standardizedTests.length > 0 && (
+            <div>
+              <p className="text-xs font-medium text-gray-500 mb-2">Standardized Tests</p>
+              <div className="flex flex-wrap gap-2">
+                {displayedTests.map((test) => (
+                  <Tag key={test} variant="default" size="sm">
+                    {test}
+                  </Tag>
+                ))}
+                {standardizedTests.length > 3 && (
+                  <Tag variant="default" size="sm">
+                    +{standardizedTests.length - 3} more
+                  </Tag>
+                )}
+              </div>
+            </div>
+          )}
+
           <div>
             <p className="text-xs font-medium text-gray-500 mb-2">Languages</p>
             <div className="flex flex-wrap gap-2">
@@ -61,10 +84,6 @@ export default function TutorCard({ tutor, showAllSubjects = false }: TutorCardP
           </div>
         </div>
 
-        {tutor.availability && (
-          <p className="text-xs text-primary-500 mb-6 font-light">{tutor.availability}</p>
-        )}
-
         <Link
           href={`/team/${tutor.id}`}
           className="text-primary-800 hover:text-black font-medium text-sm inline-flex items-center border-b border-primary-300 hover:border-primary-800 transition-colors duration-200"
@@ -78,4 +97,3 @@ export default function TutorCard({ tutor, showAllSubjects = false }: TutorCardP
     </div>
   )
 }
-
