@@ -4,8 +4,8 @@ export default function StructuredData() {
     '@type': 'Organization',
     name: 'EB Tutors',
     description: 'Expert tutoring for European Baccalaureate, admissions tests, and university applications.',
-    url: 'https://eurobactutors.com',
-    logo: 'https://eurobactutors.com/logo.png',
+    url: 'https://ebtutors.com',
+    logo: 'https://ebtutors.com/logo.png',
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Service',
@@ -19,7 +19,7 @@ export default function StructuredData() {
     '@type': 'LocalBusiness',
     name: 'EB Tutors',
     description: 'Expert tutoring for European Baccalaureate, admissions tests, and university applications.',
-    url: 'https://eurobactutors.com',
+    url: 'https://ebtutors.com',
     serviceArea: {
       '@type': 'GeoCircle',
       geoMidpoint: {
@@ -93,5 +93,4 @@ export default function StructuredData() {
     </>
   )
 }
-
 

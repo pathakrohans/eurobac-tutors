@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { tutors } from '@/data/tutors'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://eurobactutors.com'
+  const baseUrl = 'https://ebtutors.com'
 
   const routes = [
     '',
@@ -30,5 +30,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ]
 }
-
 

@@ -29,13 +29,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://eurobactutors.com',
+    url: 'https://ebtutors.com',
     siteName: 'EB Tutors',
     title: 'EB Tutors | European Baccalaureate • Admissions Tests • University Applications',
     description: 'Expert tutoring for European Baccalaureate, admissions tests, and university applications.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: 'https://ebtutors.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'EB Tutors',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'EB Tutors',
     description: 'Expert tutoring for European Baccalaureate, admissions tests, and university applications.',
-    images: ['/og-image.jpg'],
+    images: ['https://ebtutors.com/og-image.jpg'],
   },
   robots: {
     index: true,
