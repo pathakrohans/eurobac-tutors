@@ -30,7 +30,7 @@ export const tutors: Tutor[] = [
     headshot: '/team/leonardo-maestri.jpg',
     degree: 'BA International Business Administration, Rotterdam School of Management - Erasmus University',
     bio: 'Leonardo specializes in economics and L1 English for the European Baccalaureate.',
-    subjects: ['Mathematics 3P', 'Mathematics 5P', 'Advanced Mathematics', 'L1 English'],
+    subjects: ['Mathematics 3P', 'Mathematics 5P', 'Advanced Mathematics'],
     languages: ['English', 'Italian'],
     specialties: ['Oral Exam Prep'],
     admissionsSystems: ['StudieLink'],
