@@ -39,7 +39,7 @@ export const tutors: Tutor[] = [
   {
     id: 'matteo-naudi',
     name: 'Matteo Naudi',
-    headshot: '/team/rohan-pathak.jpg',
+    headshot: '/team/matteo-naudi.jpg',
     degree: 'BSc Sport Science, Coaching, and Physical Education, Loughborough University',
     bio: 'Matteo has expertise in various subjects within the EB system. He also has extensive experience with UCAS personal statements and interview preparation.',
     subjects: ['Biology', 'Geography', 'L1 English'],
