@@ -64,7 +64,7 @@ export const tutors: Tutor[] = [
     id: 'tom-beauge',
     name: 'Tom Beaugé',
     headshot: '/team/tom-beauge.jpg',
-    degree: 'BSc Computer Science, EPFL',
+    degree: 'BSc Computer Science, École Polytechnique Fédérale de Lausanne (EPFL)',
     bio: 'Tom specializes in STEM subjects. He has a strong track record helping students prove themselves in mathematics and computer science.',
     subjects: ['ICT', 'Mathematics 3P', 'Mathematics 5P', 'Advanced Mathematics', 'Physics'],
     languages: ['English', 'French'],
